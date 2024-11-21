@@ -2,10 +2,8 @@
   <kinesis-container :audio="you_can_say_hi" :playAudio="isPlaying">
     <kinesis-audio :audioIndex="26" type="rotate" :strength="10">
       <kinesis-element type="rotate" :strength="10">
-        <img
+        <Vinyl
           class="w-12 h-12"
-          src="../assets/svg/vinyl.svg"
-          alt="Vinyl record"
           @click="changeState"
           :class="isPlaying ? 'animate-spin' : ''"
         />
@@ -19,6 +17,7 @@ import { ref } from 'vue'
 import { KinesisContainer, KinesisElement, KinesisAudio } from 'vue-kinesis'
 import lightswitch from '@/assets/audio/lightswitch.mp3'
 import you_can_say_hi from '@/assets/audio/you_can_say_hi.mp3'
+import Vinyl from '@/assets/svg/vinyl.svg'
 
 const isPlaying = ref<boolean>(false)
 
