@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import y2k1 from '@/assets/svg/y2k-1.svg'
-import vinyl from '@/assets/svg/vinyl.svg'
 </script>
 
 <template>
