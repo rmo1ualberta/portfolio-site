@@ -10,7 +10,6 @@ import svgLoader from 'vite-svg-loader'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/portfolio-site/',
   build: {
     outDir: 'dist/client',
   },
