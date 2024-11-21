@@ -263,7 +263,6 @@ onUnmounted(() => {
 <template>
   <div class="w-full h-full">
     <!-- Desktop -->
-
     <div class="hidden lg:flex relative my-6 scale-[90%]">
       <!-- Project List -->
       <div
