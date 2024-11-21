@@ -449,8 +449,6 @@ onUnmounted(() => {
           {{ currentProjectMobile.description }}
         </p>
       </div>
-
-      <!-- Indicator for Carousel -->
     </div>
   </div>
 </template>
