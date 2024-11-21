@@ -213,9 +213,8 @@ interface Project {
   date?: string
 }
 
-const currentProject = ref<Project>(Projects[0])
 const currentProjectIndex = ref(0)
-
+const currentProject = ref<Project>(Projects[0])
 const currentProjectMobile = computed(() => Projects[currentProjectIndex.value])
 
 const plugins = [new Arrow(), new Pagination()]
