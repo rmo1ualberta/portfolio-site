@@ -194,7 +194,6 @@ const icons: Record<'skills' | 'projects' | 'contact', string[]> = {
 .router-view-container {
   min-height: calc(100vh - 6rem);
   overflow-y: auto;
-  overflow-x: hidden;
   height: calc(100vh);
 }
 </style>

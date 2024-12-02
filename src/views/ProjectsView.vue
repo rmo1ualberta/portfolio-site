@@ -398,7 +398,7 @@ onUnmounted(() => {
 
       <!-- Glow Element Positioned Just Below -->
       <div
-        class="absolute left-1/2 transform -translate-x-1/2 -translate-y-24 blur-2xl rounded-full aspect-square z-10 w-[90%] h-[10%] transition-colors duration-300"
+        class="absolute left-1/2 transform -translate-x-1/2 -translate-y-24 blur-2xl rounded-full aspect-square z-10 w-[70%] h-[10%] transition-colors duration-300"
         :style="{
           zIndex: 1,
           backgroundColor: currentProjectMobile.color,
@@ -448,6 +448,12 @@ onUnmounted(() => {
         <p class="mb-4 text-black-300 dark:text-beige-700">
           {{ currentProjectMobile.description }}
         </p>
+
+        <p
+          v-if="currentProjectMobile.extraDescription"
+          v-html="currentProjectMobile.extraDescription.replace(/\n/g, '<br>')"
+          class="mt-4 pb-4 text-black-300 dark:text-beige-700"
+        ></p>
       </div>
     </div>
   </div>
