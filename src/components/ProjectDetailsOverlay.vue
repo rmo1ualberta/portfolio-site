@@ -64,7 +64,7 @@ watch(
       @click="closeOverlay"
       class="absolute top-[9vh] p-2 rounded-tl-full rounded-bl-full bg-beige-700 dark:bg-beige-1000 z-2 h-16 w-24 right-20 shadow-inner transform transition-transform duration-500 ease-in-out"
       :style="{
-        width: thumbnailWidth ? `calc(${thumbnailWidth}px - 2rem)` : '30vw',
+        width: '60vw',
       }"
       :class="
         isClosing
@@ -79,7 +79,7 @@ watch(
     <div
       class="fixed right-0 h-[90vh] bg-beige-500 dark:bg-beige-1100 shadow-2xl transform transition-transform duration-500 ease-in-out rounded-tl-3xl rounded-bl-3xl overflow-y-auto"
       :style="{
-        width: thumbnailWidth ? `calc(${thumbnailWidth}px - 2rem)` : '70vw',
+        width: '60vw',
       }"
       :class="
         isClosing
