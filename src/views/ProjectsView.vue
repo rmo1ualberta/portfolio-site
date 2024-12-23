@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, onMounted, computed, onUpdated, onUnmounted } from 'vue'
+import { ref, onMounted, computed, onUnmounted, nextTick } from 'vue'
 import Flicking from '@egjs/vue3-flicking'
 import { Arrow, Pagination } from '@egjs/flicking-plugins'
 import y2kArrowBasicLeft from '@/assets/svg/y2kArrowBasicLeft.svg'

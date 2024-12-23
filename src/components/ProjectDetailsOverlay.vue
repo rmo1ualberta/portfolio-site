@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, defineProps, defineEmits, onMounted, watch } from 'vue'
+import { ref, defineProps, defineEmits, onMounted, watch, nextTick } from 'vue'
 import y2kArrowRight from '@/assets/svg/y2kArrowRight.svg'
 
 interface Project {
@@ -19,6 +19,14 @@ const props = defineProps<{
   isOpen: boolean
   thumbnailWidth?: number
 }>()
+
+onMounted(() => {
+  // Wait for next tick to allow for transition to complete
+  // for both the overlay and the back button
+  nextTick(() => {
+    showBackButton.value = true
+  })
+})
 
 const emit = defineEmits(['close'])
 
