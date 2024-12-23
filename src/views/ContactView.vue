@@ -13,7 +13,6 @@ onMounted(() => {
 })
 
 const handleEmailClick = () => {
-  // Replace with your email address
   window.location.href =
     'mailto:reimaginatus@gmail.com?subject=Contact%20Inquiry'
 }

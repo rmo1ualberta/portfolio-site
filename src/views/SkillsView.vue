@@ -73,7 +73,7 @@ const animateBar = (skill: Skill) => {
 
 <template>
   <div
-    class="xl:flex xl:items-center xl:h-full p-4 pt-12 pb-36 xl:py-16 xl:pr-16 xl:w-[55rem] xl:scale-110"
+    class="xl:flex xl:items-center p-4 mt-12 pb-36 xl:py-16 xl:pr-16 xl:w-[55rem] xl:p-16"
   >
     <div class="xl:w-full">
       <!-- Header Section -->
